@@ -66,14 +66,6 @@ const Projects = (props: IProjectsProps) => {
     fetchProjects()
   }, [])
 
-  const refresh = () => {
-    fetch('http://localhost:3001/projects')
-    .then(res => res.json())
-    .then(data => console.log(Object.values(data)))
-    // setProjects([...projects as Project[], formValues] )
-    // setProjectsSearchArray(Object.values(data))
-  }
-
   const handleSearch = async (evt: React.ChangeEvent<HTMLInputElement>) => {
     if(evt.target.value.length > 0) {
       let results: Project[] = []
