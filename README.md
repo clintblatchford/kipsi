@@ -1,13 +1,13 @@
-# To run R&D TAX CREDIT app
+# To run:
 
-from root of server directory:
+From root of _server_ directory:
 
-### `npm install`
+`$npm install`
 
-### `npm start`
+`$npm start`
 
-from root of client directory run:
+From root of _client_ directory
 
-### `npm install`
+`$npm install`
 
-### `npm start`
+`$npm start`
