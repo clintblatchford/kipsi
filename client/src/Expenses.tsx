@@ -1,8 +1,8 @@
-import React from "react"
-import { Tab, Tabs } from "@mui/material"
-import Title from "./Title"
-import ExpenseTable from "./ExpenseTable"
-import { Expense, Project } from "./react-app-env"
+import React from 'react'
+import { Tab, Tabs } from '@mui/material'
+import Title from './Title'
+import ExpenseTable from './ExpenseTable'
+import { Expense, Project } from './react-app-env'
 
 interface IExpensesProps {
   projectId: string
@@ -49,13 +49,13 @@ const Expenses = (props: IExpensesProps) => {
   }
 
   return(<>
-    <Title title="EXPENSES" />
+    <Title title='EXPENSES' />
     <Tabs 
       sx={style.tab} 
       value={value} 
       onChange={handleChange}   
-      variant="scrollable"
-      scrollButtons="auto"
+      variant='scrollable'
+      scrollButtons='auto'
     >
       {tabs}
     </Tabs>

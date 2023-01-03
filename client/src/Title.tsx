@@ -17,7 +17,7 @@ const style = {
 const Title = (props: ITitleProps) => {
   return (
     <div style={props.style}>
-      <Typography variant="h5" sx={style.title}>
+      <Typography variant='h5' sx={style.title}>
         {props.title}
       </Typography>
     </div>

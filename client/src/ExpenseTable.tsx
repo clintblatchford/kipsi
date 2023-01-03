@@ -1,5 +1,5 @@
 import { TableContainer, Table, TableHead, TableRow, TableCell, TableBody } from '@mui/material'
-import { Expense } from "./react-app-env"
+import { Expense } from './react-app-env'
 
 interface IExpenseTableProps {
   expenses: Expense[]
@@ -23,8 +23,8 @@ const ExpenseTable = (props: IExpenseTableProps) => {
       <TableHead>
         <TableRow >
           <TableCell sx={style.header}>Name</TableCell>
-          <TableCell align="left" sx={style.header}>Amount</TableCell>
-          <TableCell align="left" sx={style.header}>Date</TableCell>
+          <TableCell align='left' sx={style.header}>Amount</TableCell>
+          <TableCell align='left' sx={style.header}>Date</TableCell>
         </TableRow>
       </TableHead>
       <TableBody>
@@ -32,9 +32,9 @@ const ExpenseTable = (props: IExpenseTableProps) => {
           let date = new Date(exp.timestamp)
           return (
             <TableRow key={exp.name}>
-              <TableCell component="th" scope="row">{exp.name}</TableCell>
-              <TableCell align="left">{`$${exp.amount}`}</TableCell>
-              <TableCell align="left">{`${date.getMonth()}/${date.getDate()}/${date.getFullYear()}`}</TableCell>
+              <TableCell component='th' scope='row'>{exp.name}</TableCell>
+              <TableCell align='left'>{`$${exp.amount}`}</TableCell>
+              <TableCell align='left'>{`${date.getMonth()}/${date.getDate()}/${date.getFullYear()}`}</TableCell>
             </TableRow>
           )
         })}

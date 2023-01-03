@@ -1,5 +1,5 @@
-import React from "react"
-import { Typography, Button } from "@mui/material"
+import React from 'react'
+import { Typography, Button } from '@mui/material'
 import AttachMoneyIcon from '@mui/icons-material/AttachMoney'
 
 const HEADER_TEXT = 'R&D TAX CREDIT'
@@ -34,7 +34,7 @@ const Header = (props: IHeaderProps) => {
 
   return (
       <div style={style.container}>
-        <AttachMoneyIcon fontSize="large" />
+        <AttachMoneyIcon fontSize='large' />
           {pages.map((page) => (
             <Button
               key={page}

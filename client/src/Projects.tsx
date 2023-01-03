@@ -1,15 +1,15 @@
-import React from "react"
-import { List, ListItem, ListItemText, Divider, Button, TextField } from "@mui/material"
-import Title from "./Title"
-import CreateModal from "./CreateModal"
-import { Project } from "./react-app-env"
+import React from 'react'
+import { List, ListItem, ListItemText, Divider, Button, TextField } from '@mui/material'
+import Title from './Title'
+import CreateModal from './CreateModal'
+import { Project } from './react-app-env'
 
 interface IProjectsProps {
   handleProjectClick: (projectId: string) => void
 }
 
 const defaultValues = {
-  name: "",
+  name: '',
   expense1: 0,
   expense2: 0,
   expense3: 0,
@@ -119,17 +119,17 @@ const Projects = (props: IProjectsProps) => {
 
   return( <>
     <div style={style.projectBar}>
-      <Title style={style.title} title="PROJECTS" />
+      <Title style={style.title} title='PROJECTS' />
       <Button variant='contained' onClick={handleOpen} sx={style.button}>CREATE</Button>
       <TextField
-        id="outlined-search"
-        label="Search"
+        id='outlined-search'
+        label='Search'
         size = 'small'
         sx={style.textField}
         onChange={handleSearch}>
       </TextField>
     </div>
-    <List sx={{width: '100%'}} component="nav" aria-label="mailbox folders">
+    <List sx={{width: '100%'}} component='nav' aria-label='mailbox folders'>
       {projects?.map((project: Project) => { return (<React.Fragment key={project.name+project.id}>
         <ListItem key={project.name} sx={style.list} button onClick={() => {props.handleProjectClick(project.id)}}>
           <ListItemText  primary={project.name} />
